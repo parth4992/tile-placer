@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>rotate &mdash; </title>
+    <meta name="author" content="" />
+    <link rel="stylesheet" href="../experiment-styles.css" />
+
+    <link rel="stylesheet" href="css/experiment.css" />
+<style>
+#zz0{
+background-image:url('new.jpg');height:36px; width:36px; position:absolute;top:30%;right:10%;
+}
+#zz1{
+background-image:url('any1.jpg');height:36px; width:36px; position:absolute;top:50%;right:10%;
+}
+.bg
+{
+background-image:url('any1.jpg');height:36px; width:36px;
+}
+.bg :TARGET
+{
+background-image:url('new.jpg');height:36px; width:36px;
+
+}
+</style>
+    </head>
+<body class="experiment">
+    <div class="wrapper">
+<br>
+<br>
+<br>
+<br>
+<br>
+        
+<article class="viewport">
+    <section class="cube">
+        <div></div>
+		
+		
+		
+        <div>
+            </div>
+        
+		<div style="display:none;">
+		</div>
+		<div>
+		<div style="margin:0px; border:0px; postion:relative; top:-20px; left:-20px; ">
+		
+		 <?php
+		$c=0;
+		for ($i=0; $i<=9; $i++)
+		{
+			for ($j=0; $j<=9; $j++)
+			{
+             			echo "<div class=\"bg\" id=\"a".($i+$c)."\" style=\"position:absolute;top:".($i*10)."%;left:".($j*10)."%;\"> 
+              			</div>";
+				$c=$c+1;
+	     		}
+        	}
+        	?>
+        </div>
+		
+		
+        </div>
+        
+		
+	<div >
+           
+		 
+		 <div>
+		
+		<?php
+		$c=0;
+		for ($i=0; $i<=9; $i++)
+		{ 
+			
+			for ($j=0; $j<=9; $j++)
+			{ 
+             			echo "<div class=\"bg\" id=\"a".($i+$c)."\" style=\" position:absolute;top:".($i*10)."%;left:".($j*10)."%;\"> 
+              			</div>";
+				$c=$c+1;
+	     		}
+        	}
+        	?>
+        	</div>	
+    	</div>
+		 
+        
+		<div>
+		
+		<div style="margin:0px; border:0px; postion:relative; top:-20px; left:-20px; -webkit-transform-origin:0% 0%; -moz-transform-origin:0% 0%;">
+		
+		 <?php
+		$d=0;
+				
+		for ($i=0; $i<=9; $i++)
+		{
+		for ($j=0; $j<=9; $j++)
+			{
+          echo "<div class=\"bg\" id=\"a".($i+$d)."\" style=\"position:absolute;top:".($i*10)."%;left:".($j*10)."%;\"> 
+          </div>";
+		$d=$d+1;
+		}
+  }
+?>
+        </div>
+		
+        </div>	
+		
+	
+        
+		
+		<div>
+		
+        <div>
+		
+		 <?php
+		$c=0;
+		for ($i=0; $i<=9; $i++)
+		{
+		for ($j=0; $j<=9; $j++)
+			{
+  echo "<div class=\"bg\" id=\"a".($i+$c)."\" style=\" position:absolute;top:".($i*10)."%;left:".($j*10)."%;\"> 
+  </div>";
+	$c=$c+1;
+		}
+  }
+?>
+        </div>
+        </div>
+	
+    </section>
+</article>
+<div id="zz0">
+
+</div>
+
+<div id="zz1">
+
+</div>
+<script src="jquery.min.js"></script>
+<script src="js/change.js"></script>
+<script src="js/experiment.js"></script>
+</body>
+</html>
+
+
